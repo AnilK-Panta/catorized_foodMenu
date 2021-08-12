@@ -1,38 +1,160 @@
-.App {
-  text-align: center;
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+::-webkit-scrollbar {
+    width: 7px;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 10px grey; 
+    border-radius: 100px;
   }
-  to {
-    transform: rotate(360deg);
+  ::-webkit-scrollbar-thumb {
+    background: rgb(87, 87, 87); 
+    border-radius: 100px;
   }
+.App{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243, 243, 243);
+}
+.card{
+    width: 380px;
+    max-height: 500px;
+    margin: 10px;
+    padding: 15px;
+    /* border-style: solid;
+    border-width: 1px; */
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.card-number{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(41, 41, 41);
+    font-size: 9px;
+}
+.card-author{
+    color: cornflowerblue;
+    text-transform: uppercase;
+    font-size: 9px;
+    color: rgb(41, 41, 41);
+    margin-top: 5px;
+}
+.card-title{
+    margin: 5px 0px;
+}
+.card-title h1{
+    font-size: 35px;
+}
+.card-desc p{
+    max-height: 90px;
+    overflow: hidden;
+}
+.card-divider{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+.card-hr{
+    width: 70%;
+    color: rgb(170, 170, 170);
+}
+.card-readmore{
+    border:rgb(170, 170, 170) 1px solid;
+    color: rgb(170, 170, 170);
+    border-radius: 15px;
+    padding: 5px;
+    cursor: pointer;
+}
+.card-readmore:hover{
+    color: rgb(41, 41, 41);
+    background-color: rgb(170, 170, 170);
+}
+.card-image{
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-image img{
+    width: 100%;
+    height: auto;
+}
+.card-order{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 5px;
+}
+.card-order-button{
+    border:rgb(170, 170, 170) 1px solid;
+    padding: 5px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: rgb(119, 119, 119);
+}
+.card-order-button:hover{
+    color: rgb(41, 41, 41);
+    background-color: rgb(170, 170, 170);
+}
+/* ----------------------NavBar---------------- */
+.Navbar{
+    width: 100%;
+    /* background-color: rgb(111, 111, 111); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.NavbarButton{
+    background-color: white;
+    border-radius: 6px;
+    /* padding: 10px; */
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.NavbarButton p{
+    margin: 0px 10px;
+    padding: 10px;
+    cursor: pointer;
+    /* background-color: rgb(170, 170, 170); */
+}
+.active, .btn:hover{
+    background-color: rgb(170, 170, 170);
+}
+.btn:focus{
+    background-color: rgb(170, 170, 170);
+
+}
+/* -----------------------Resturant_Card-------------------- */
+.resturant-card-body{
+    width: 100%;
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    /* column-count: 3; */
+}
+.card-body-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
